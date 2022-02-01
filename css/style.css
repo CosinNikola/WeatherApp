@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: #00ccff;
+  margin: 0 auto;
+  height: 550px;
+  width: 600px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.container .cityName {
+  margin-bottom: 20px;
+}
+
+.container .temperature {
+  color: white;
+  font-size: 40px;
+}
+
+.container .weatherInfo {
+  color: white;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.container .feelsLike {
+  margin-top: 20px;
+}
+
+.container .moreInfo {
+  margin: 40px 0;
+  list-style-type: none;
+}
+
+.container .moreInfo .moreInfo-item {
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline;
+}
+
+.container .tempMaxMin {
+  color: white;
+  margin: 10px 0;
+}
+
+.container #icon {
+  margin: 0 auto;
+}
+
+.container .iconImg {
+  height: 70px;
+  width: 70px;
+}
+
+.container .changeLocation {
+  padding: 10px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#333333));
+  background: linear-gradient(black, #333333);
+  color: WHITE;
+  margin: 40px 0;
+}
+
+.container .changeLocation:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+  background: linear-gradient(#333333, black);
+  cursor: pointer;
+}
