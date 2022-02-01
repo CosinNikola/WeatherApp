@@ -1,0 +1,77 @@
+$daylightSky: #00ccff;
+$centerDiv: 0 auto;
+$elementMarg: 20px 0;
+$btnPrimColor: black;
+$btnSecColor: #333333;
+$font: "ASD";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  background-color: $daylightSky;
+  margin: $centerDiv;
+  height: 550px;
+  width: 600px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+  .cityName {
+    margin-bottom: 20px;
+  }
+  .temperature {
+    color: white;
+    font-size: 40px;
+  }
+  .weatherInfo {
+    color: white;
+    margin: $elementMarg;
+    font-size: 30px;
+  }
+  .feelsLike {
+    margin-top: 20px;
+  }
+  .moreInfo {
+    margin: 40px 0;
+    list-style-type: none;
+
+    .moreInfo-item {
+      padding: 15px 20px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline;
+    }
+  }
+  .tempMaxMin {
+    color: white;
+    margin: 10px 0;
+  }
+  #icon {
+    margin: $centerDiv;
+  }
+  .iconImg {
+    height: 70px;
+    width: 70px;
+  }
+  .changeLocation {
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient($btnPrimColor, $btnSecColor);
+    color: WHITE;
+    margin: 40px 0;
+  }
+
+  .changeLocation:hover {
+    background: linear-gradient($btnSecColor, $btnPrimColor);
+    cursor: pointer;
+  }
+}
