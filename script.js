@@ -24,7 +24,6 @@ function changeLocation() {
       return res.json();
     })
     .then((data) => {
-      console.log(data);
       cityName.innerHTML = `${data.name}, ${data.sys.country}`;
       weatherInfo.innerHTML = `${data.weather[0].main}`;
       temp.innerHTML = `${Math.round(data.main.temp)}&#176; C`;
